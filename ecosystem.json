@@ -13,7 +13,7 @@
             "host": "45.135.135.145",
             "ref": "origin/master",
             "repo": "git@github.com:yoloten/express-server-test.git",
-            "path": "/home/myapp/ express-server-test/",
+            "path": "/home/myapp/express-server-test/",
             "post-deploy": ". ~/.nvm/nvm.sh && npm ci --production && pm2 startOrRestart ecosystem.json --env prod"
         }
     }

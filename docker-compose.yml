@@ -1,0 +1,8 @@
+services:
+  myapp:
+    image: sample-app:dev
+    volumes:
+      # монтируем исходники чтобы изменения отражались в контейнере
+      - ./src:/app/src
+      # монтируем package.json чтобы не нужно было пересобирать образ если мы потрогали скрипты
+      - ./package.json:/app/package.json
